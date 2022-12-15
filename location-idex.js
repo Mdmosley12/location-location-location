@@ -1,10 +1,9 @@
 function addRemoteLocation(arr) {
     const newArray = [...arr];
-    for (let i = 0; i < arr.length; i++) {
-        if (!newArray[i].hasOwnProperty('location')) {
-            newArray[i].location = 'remote';
-        }
-    }
+
+    newArray.forEach((obj) => {
+        if (!obj.hasOwnProperty('location')) obj.location = 'remote';
+    });
     return newArray;
 }
 

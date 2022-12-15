@@ -17,13 +17,6 @@ describe('addRemoteLocation', () => {
         ];
         expect(addRemoteLocation(studentsArray)).not.toBe(studentsArray);
     })
-    test('Increments through the array', () => {
-        const studentsArray = [
-            { name: 'Hypatia', age: 31, location: 'leeds' },
-            { name: 'Ramanujan', age: 22 },
-            { name: 'Tao', age: 47, location: 'manchester' }
-        ];
-    })
     test('Adds a location property if one is not present', () => {
         const studentsArray = [
             { name: 'Hypatia', age: 31, location: 'leeds' },
